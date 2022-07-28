@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Outfit, sans-serif;
+}
+
+main {
+    max-width: 90%;
+}
+
+.card-container {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.image-container {
+    margin-bottom: 1.5rem;
+}
+
+.image-container {
+    border-radius: 15px;
+    transition: background-color 0.3s, background-image 0.3s;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+.image-container:hover {
+    background-color: rgba(0, 255, 247, 0.8);
+    background-image: url(images/icon-view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.image-container img:hover {
+    opacity: 0.5;
+}
+
+.info-container {
+    font-size: 1.1rem;
+}
+
+.info-container .title {
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.info-container .title:hover {
+    color: rgb(0, 255, 247);
+}
+
+.info-container p {
+    margin: 1.2rem 0;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.validity-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.validity-container div {
+    display: flex;
+    align-items: center;
+}
+
+.validity-container div img {
+    margin-right: 0.5rem;
+}
+
+.validity-container div:nth-of-type(1) {
+    color: hsl(178, 100%, 50%);
+}
+
+.validity-container div:nth-of-type(2) {
+    color: hsl(215, 51%, 70%);
+}
+
+.profile-container {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.profile-container img {
+    width: 40px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 2px solid white;
+
+}
+
+.profile-container span {
+    color: hsl(215, 51%, 70%);
+}
+
+.profile-container span span {
+    color: white;
+    transition: color 0.3s;
+}
+
+.profile-container span span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (min-width:375px) {
+    main {
+        max-width: 350px;
+    }
+}

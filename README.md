@@ -10,7 +10,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/design-preview.png)
+![](images/design-screenshot.png)
 
 
 ### Links
